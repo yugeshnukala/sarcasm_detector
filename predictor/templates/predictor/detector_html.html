@@ -1,0 +1,14 @@
+{% extends 'predictor/base.html' %}
+
+
+{% block content %}
+
+<h1 class="text-uppercase">
+        <strong>Please provide your headline to detect!</strong>
+</h1>
+<form id="form" action="/predict/" method="GET">
+    {{ form }}
+    <input type="submit" id="submit" />
+</form>
+
+{% endblock %}
