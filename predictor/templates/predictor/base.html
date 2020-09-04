@@ -3,57 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Sarcastic Detector</title>
-    <style>
-      .text-uppercase {
-        text-align: center;
-        font-size: 250%;
-      }
-      #inp {
-        position: absolute;
-        right: 32%;
-        width: 500px;
-        height: 35px;
-        text-align: center;
-        font-size: 150%;
-      }
-      #header {
-        padding-left: 50px;
-        height: 50px;
-        font-size: 50px;
-      }
-      body {
-        background-color: turquoise;
-      }
-      #form {
-        padding-left: 15%;
-        font-size: 30px;
-      }
-      #result {
-        text-align: center;
-        font-size: 30px;
-      }
-      #id-for-headline
-    {
-        padding: 8px;
-        width: 50%;
-        font-size: 20px;
-    }
-      #submit {
-        font-size: 14px;
-        margin: 11px 4px;
-        padding: 0 16px;
-        line-height: 27px;
-        height: 40px;
-        min-width: 54px;
-        text-align: center;
-        cursor: pointer;
-      }
-    </style>
+    {% include './css.html' %}
   </head>
-  <header>
-    <h1 id="header">Sarcastic Detector</h1>
-  </header>
-  <hr />
+  <nav id="header">
+    <h1>Sarcastic Detector</h1>
+  </nav>
+  <hr/>
   <body>
     {% block content %} {% endblock %}
   </body>

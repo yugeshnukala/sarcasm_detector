@@ -4,11 +4,22 @@
 {% block content %}
 
 <h1 class="text-uppercase">
-        <strong>Please provide your headline to detect!</strong>
+    <strong>Please provide your headline to detect!</strong>
 </h1>
 <form id="form" action="/predict/" method="GET">
     {{ form }}
     <input type="submit" id="submit" />
 </form>
+
+
+{% if result %}
+<div id="result">
+    <h1>
+        <strong>
+            Result : {{ result }}
+        </strong>
+    </h1>
+</div>
+{% endif %}
 
 {% endblock %}
